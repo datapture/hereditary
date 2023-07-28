@@ -4,8 +4,10 @@ version = "0.1.0"
 edition = "2021"
 autors = ["Francisco Leon <https://github.com/superoptimo>"]
 license = "Apache-2.0"
-description = "Procedural macros for emulating OOP Inheritance in Rust"
-keywords = ["OOP", "inheritance", "forwarding", "newtype", "composition", "trait", "derive"]
+description = "Procedural macros for emulating OOP Inheritance in Rust by forwarding trait methods"
+keywords = ["OOP", "inheritance", "forwarding", "newtype", "composition"]
+categories = ["type-reflection", "reusability", "design-pattern"]
+repository = "https://github.com/datapture/hereditary"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -13,6 +15,7 @@ keywords = ["OOP", "inheritance", "forwarding", "newtype", "composition", "trait
 proc-macro = true
 
 [dependencies]
+forwarding_gen = { version = "0.1.0", path = "../forwarding_gen" }
 proc-macro2 = "1.0.54"
 syn = { version = "2.0.10"}
-forwarding_gen = {path = "../forwarding_gen"}
+
