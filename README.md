@@ -24,7 +24,7 @@ Currently, `Hereditary` support 2 kinds of delegation:
 the new type with the same interface as its components.
 - Re-use fields/method implementations from other types as subcomponents, without needing to repeately write wrapping code
 that forwards the methods of those subcomponents.
-- `Hereditary` tools are essentially *zero-cost abstractions*. They doesn't require runtime structures for holding trait type information. 
+- `Hereditary` tools are essentially *zero-cost abstractions*. They don't require runtime structures for holding trait type information. 
 All the work it's done by macros and code generation.
 - Embrace the [**New Type pattern**](https://www.lurklurk.org/effective-rust/newtype.html) effectively, but without the previous
 awkward issues of having to re-implement the `inner-type` interfaces for the `new-type`. By using this technique Rust programmers
