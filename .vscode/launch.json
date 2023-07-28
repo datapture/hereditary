@@ -5,6 +5,30 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "lldb",
+            "request": "launch",
+            "name": "MacroBridgeDeriveDebugLLDB",
+            "program": "${workspaceFolder}/target/debug/macro_bridge_derive",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "MacroBridgeTraitDebugLLDB",
+            "program": "${workspaceFolder}/target/debug/macro_bridge_impltrait",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "ReceiversDebugLLDB",
+            "program": "${workspaceFolder}/target/debug/receivers_codegen",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
             "name": "ReceiversDebugWin",
             "type": "cppvsdbg",
             "request": "launch",
