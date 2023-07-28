@@ -4,12 +4,14 @@ version = "0.1.0"
 edition = "2021"
 autors = ["Francisco Leon <https://github.com/superoptimo>"]
 license = "Apache-2.0"
-description = "Procedural macros for emulating OOP Inheritance in Rust"
-keywords = ["OOP", "inheritance", "forwarding", "newtype", "composition", "trait", "derive"]
+description = "Procedural macros for obtaining Trait information at compile time (proc-macro export)"
+keywords = ["reflection", "compile-time", "trait", "introspection"]
+categories = ["reusability", "design-pattern"]
+repository = "https://github.com/datapture/hereditary"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
 proc-macro = true
 
 [dependencies]
-trait_info_gen = {path = "../trait_info_gen"}
+trait_info_gen = { version = "0.1.0", path = "../trait_info_gen" }
