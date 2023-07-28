@@ -1,0 +1,35 @@
+[package]
+name = "hereditary"
+version = "0.1.0"
+edition = "2021"
+autors = ["Francisco Leon <https://github.com/superoptimo>"]
+license = "Apache-2.0"
+description = "Procedural macros for emulating OOP Inheritance in Rust"
+keywords = ["OOP", "inheritance", "forwarding", "newtype", "composition", "trait", "derive"]
+categories = ["productivy", "reusability", "design-pattern"]
+repository = "https://github.com/datapture/hereditary"
+readme = "README.md"
+
+[lib]
+doc = true
+
+[dependencies]
+trait_info = {path = "./crates/trait_info"}
+forwarding = {path = "./crates/forwarding"}
+
+[dev-dependencies]
+trait_info_gen = {path = "./crates/trait_info_gen"}
+
+[workspace]
+resolver = "2"
+members = [
+    "./crates/trait_info_gen",
+    "./crates/trait_info",
+    "./crates/forwarding_gen",
+    "./crates/forwarding",
+    "./examples/trait_codegen",
+    "./examples/receivers_codegen",
+    "./examples/macro_bridge_impltrait",
+    "./examples/macro_bridge_derive",
+    "./examples/hereditary_impl_test",
+]

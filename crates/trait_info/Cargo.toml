@@ -1,0 +1,15 @@
+[package]
+name = "trait_info"
+version = "0.1.0"
+edition = "2021"
+autors = ["Francisco Leon <https://github.com/superoptimo>"]
+license = "Apache-2.0"
+description = "Procedural macros for emulating OOP Inheritance in Rust"
+keywords = ["OOP", "inheritance", "forwarding", "newtype", "composition", "trait", "derive"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+proc-macro = true
+
+[dependencies]
+trait_info_gen = {path = "../trait_info_gen"}
