@@ -5,7 +5,7 @@ edition = "2021"
 autors = ["Francisco Leon <https://github.com/superoptimo>"]
 license = "Apache-2.0"
 description = "Procedural macros for emulating OOP Inheritance in Rust"
-keywords = ["OOP", "inheritance", "forwarding", "newtype", "composition", "trait", "derive"]
+keywords = ["OOP", "inheritance", "forwarding", "composition"]
 categories = ["productivy", "reusability", "design-pattern"]
 repository = "https://github.com/datapture/hereditary"
 readme = "README.md"
@@ -14,11 +14,11 @@ readme = "README.md"
 doc = true
 
 [dependencies]
-trait_info = {path = "./crates/trait_info"}
-forwarding = {path = "./crates/forwarding"}
+forwarding = { version = "0.1.0", path = "crates/forwarding" }
+trait_info = { version = "0.1.0", path = "crates/trait_info" }
 
 [dev-dependencies]
-trait_info_gen = {path = "./crates/trait_info_gen"}
+trait_info_gen = {version = "0.1.0", path = "./crates/trait_info_gen"}
 
 [workspace]
 resolver = "2"
